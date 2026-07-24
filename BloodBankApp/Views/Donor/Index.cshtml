@@ -1,0 +1,48 @@
+﻿@model List<BloodBankApp.EF.Tables.Donor>
+@{
+    ViewData["Title"] = "Donors";
+}
+<h1>Donors</h1>
+<a href="/donor/create" class="btn btn-primary mb-2">Create New Donor</a>
+
+<ul class="nav nav-pills mb-3">
+    <li class="nav-item"><a class="nav-link" href="/donorquery/byBloodGroup">Filter by Blood Group</a></li>
+    <li class="nav-item"><a class="nav-link" href="/donorquery/byLastDonation">Sorted by Last Donation</a></li>
+    <li class="nav-item"><a class="nav-link" href="/donorquery/donationCounts">Donation Counts</a></li>
+    <li class="nav-item"><a class="nav-link" href="/donorquery/totalVolume">Total Volume Collected</a></li>
+</ul>
+
+@if (Model.Count != 0)
+{
+    <table class="table table-bordered">
+        <tr>
+            <th>Id</th>
+            <th>Full Name</th>
+            <th>Blood Group</th>
+            <th>Contact No</th>
+            <th>City</th>
+            <th>Last Donation Date</th>
+            <th></th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.DonorId</td>
+                <td>@item.FullName</td>
+                <td>@item.BloodGroup</td>
+                <td>@item.ContactNo</td>
+                <td>@item.City</td>
+                <td>@(item.LastDonationDate?.ToString("yyyy-MM-dd") ?? "N/A")</td>
+                <td>
+                    <a target="_blank" class="btn btn-primary" href="/donor/details/@item.DonorId">Details</a>
+                    <a class="btn btn-success" href="/donor/edit/@item.DonorId">Edit</a>
+                    <a class="btn btn-danger" href="/donor/delete/@item.DonorId">Delete</a>
+                </td>
+            </tr>
+        }
+    </table>
+}
+else
+{
+    <p>No data Found</p>
+}

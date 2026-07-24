@@ -1,0 +1,12 @@
+﻿@model BloodBankApp.EF.Tables.Donor
+@{
+    ViewData["Title"] = "Donor Details";
+}
+<h1>Donor Details</h1>
+<h2>Full Name: @Model.FullName</h2>
+<h2>Blood Group: @Model.BloodGroup</h2>
+<h2>Contact No: @Model.ContactNo</h2>
+<h2>City: @Model.City</h2>
+<h2>Last Donation Date: @(Model.LastDonationDate?.ToString("yyyy-MM-dd") ?? "N/A")</h2>
+
+<a href="/donor/index" class="btn btn-secondary">Back to List</a>

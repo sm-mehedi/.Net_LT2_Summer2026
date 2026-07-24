@@ -1,0 +1,33 @@
+﻿@model BloodBankApp.EF.Tables.Donor
+@{
+    ViewData["Title"] = "Create Donor";
+}
+<h1>Create Donor</h1>
+
+@Html.ValidationSummary()
+
+<form action="" method="post">
+    <div class="form-group mb-2">
+        Full Name: <input type="text" class="form-control" name="FullName" value="@Model.FullName" placeholder="Full Name" />
+        <span class="text-danger">@Html.ValidationMessage("FullName")</span>
+    </div>
+    <div class="form-group mb-2">
+        Blood Group: <input type="text" class="form-control" name="BloodGroup" value="@Model.BloodGroup" placeholder="e.g. A+, O-, AB+" />
+        <span class="text-danger">@Html.ValidationMessage("BloodGroup")</span>
+    </div>
+    <div class="form-group mb-2">
+        Contact No: <input type="text" class="form-control" name="ContactNo" value="@Model.ContactNo" placeholder="Contact No" />
+        <span class="text-danger">@Html.ValidationMessage("ContactNo")</span>
+    </div>
+    <div class="form-group mb-2">
+        City: <input type="text" class="form-control" name="City" value="@Model.City" placeholder="City" />
+        <span class="text-danger">@Html.ValidationMessage("City")</span>
+    </div>
+    <div class="form-group mb-2">
+        Last Donation Date: <input type="date" class="form-control" name="LastDonationDate" value="@(Model.LastDonationDate?.ToString("yyyy-MM-dd"))" />
+        <span class="text-danger">@Html.ValidationMessage("LastDonationDate")</span>
+    </div>
+
+    <input type="submit" value="Create" class="btn btn-primary" />
+    <a href="/donor/index" class="btn btn-secondary">Cancel</a>
+</form>
