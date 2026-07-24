@@ -18,30 +18,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\User\source\repos\BloodBankApp\BloodBankApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/User/source/repos/BloodBankApp/BloodBankApp/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/User/source/repos/BloodBankApp/BloodBankApp/Views/DonorQuery/ByBloodGroup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9ub3JRdWVyeVxCeUJsb29kR3JvdXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/BloodBankApp/BloodBankApp/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/User/source/repos/BloodBankApp/BloodBankApp/Views/DonorQuery/ByLastDonation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9ub3JRdWVyeVxCeUxhc3REb25hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/BloodBankApp/BloodBankApp/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[C:/Users/User/source/repos/BloodBankApp/BloodBankApp/Views/DonorQuery/DonationCounts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9ub3JRdWVyeVxEb25hdGlvbkNvdW50cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/BloodBankApp/BloodBankApp/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[C:/Users/User/source/repos/BloodBankApp/BloodBankApp/Views/DonorQuery/TotalVolume.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9ub3JRdWVyeVxUb3RhbFZvbHVtZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/source/repos/BloodBankApp/BloodBankApp/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/source/repos/BloodBankApp/BloodBankApp/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/source/repos/BloodBankApp/BloodBankApp/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-pdj88xyfd1

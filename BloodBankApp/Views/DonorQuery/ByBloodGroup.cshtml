@@ -1,0 +1,47 @@
+﻿@model List<BloodBankApp.EF.Tables.Donor>
+@{
+    ViewData["Title"] = "Filter by Blood Group";
+    List<string> groups = ViewBag.BloodGroups;
+    string? selected = ViewBag.Selected;
+}
+<h1>Filter Donors by Blood Group</h1>
+<a href="/donor/index" class="btn btn-secondary mb-2">Back to Donors</a>
+
+<form action="" method="get">
+    Blood Group:
+    <select name="bloodGroup">
+        <option value="">--Select--</option>
+        @foreach (var g in groups)
+        {
+            <option value="@g" selected="@(g == selected)">@g</option>
+        }
+    </select>
+    <input type="submit" value="Filter" class="btn btn-primary" />
+</form>
+
+@if (selected != null && Model.Count == 0)
+{
+    <p>No donors found for blood group @selected.</p>
+}
+else if (Model.Count != 0)
+{
+    <table class="table table-bordered mt-3">
+        <tr>
+            <th>Id</th>
+            <th>Full Name</th>
+            <th>Blood Group</th>
+            <th>Contact No</th>
+            <th>City</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.DonorId</td>
+                <td>@item.FullName</td>
+                <td>@item.BloodGroup</td>
+                <td>@item.ContactNo</td>
+                <td>@item.City</td>
+            </tr>
+        }
+    </table>
+}
