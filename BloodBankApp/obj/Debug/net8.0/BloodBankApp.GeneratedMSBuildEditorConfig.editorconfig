@@ -33,3 +33,11 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/User/source/repos/BloodBankApp/BloodBankApp/Views/DonorQuery/TotalVolume.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9ub3JRdWVyeVxUb3RhbFZvbHVtZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/source/repos/BloodBankApp/BloodBankApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/source/repos/BloodBankApp/BloodBankApp/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
